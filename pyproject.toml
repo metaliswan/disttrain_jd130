@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metaliswan-disttrain_jd130"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出分布式训练框架工程师·提示注入的跨轮传播上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "metaliswan" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://metaliswan.github.io"
+Repository = "https://github.com/metaliswan/disttrain_jd130"
+Issues = "https://github.com/metaliswan/disttrain_jd130/issues"
+
+[project.scripts]
+disttrain_jd130 = "disttrain_jd130:main"
+
+[tool.setuptools]
+py-modules = ["disttrain_jd130"]
